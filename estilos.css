@@ -124,7 +124,7 @@ nav{
 nav ul{
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 6em 0 0.5em;
 }
 
 nav ul li{
@@ -214,6 +214,24 @@ nav ul #publicar_nav a{
 	top: 100%;
 	right: 3%;
 }
+#contenido .item .votacion a{
+	text-decoration: none;
+}
+#contenido .item .votacion .guardar_item{
+	color:#FFBE2C;
+	position:relative;
+	top: .15em;
+}
+#contenido .item .votacion .up
+{
+	color:green;
+}
+
+#contenido .item .votacion .down
+{
+	color:#DD4F24;
+}
+
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
 {
