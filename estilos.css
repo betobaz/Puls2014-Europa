@@ -51,7 +51,9 @@
 	content: "\e604";
 }
 
-
+aside{
+	display:none;
+}
 body{
 	background:#eeeeee;
 	font-family: 'Open Sans', sans-serif;
@@ -89,13 +91,19 @@ header{
 	overflow: hidden;
 	position: relative;
 }
-
-header #logo img{
+header #logo{
 	border-right: 1px solid white;
 	margin-right: 0.5em;
 	padding-right: 0.5em;
+}
+header #logo img{
+	transition:.5s;
 	width: 52px;
 }
+header #logo img:hover{
+	transform: rotate(360deg);
+}
+
 header #avatar {
 	right: 0;
 	position: absolute;
@@ -136,6 +144,10 @@ nav ul li a{
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
+	transition: .3s;
+}
+nav ul li a:hover{
+	background:#344B54;
 }
 nav ul #publicar_nav{
 	position: absolute;
@@ -152,7 +164,9 @@ nav ul #publicar_nav a{
 	padding: 0.6em 0.8em;
 
 }
-
+nav ul #publicar_nav a:hover{
+	box-shadow: 0 0 2em yellow;
+}
 #contenido {
 	margin: 1em;	
 }
@@ -234,6 +248,53 @@ nav ul #publicar_nav a{
 
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
-{
+{-
 	float: right;
+}
+
+.formulario{
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+
+.formulario input{
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+
+.formulario input[type="submit"]{
+	background: #22BCE0;
+	border: none;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	color: #fff;
+}
+@media screen and (min-width:800px){
+	
+	#contenido{
+		overflow: hidden;
+	}
+	#contenido .item{
+		width: 49%;
+		float: left;
+	}
+	#contenido .item:nth-child(odd){
+		margin-right: 2%;
+	}
+}
+@media screen and (min-width: 1000px)
+{
+	aside{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+	aside video{
+		width: 100%;
+	}
 }
