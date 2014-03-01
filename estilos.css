@@ -9,6 +9,7 @@
     font-style: normal;
 
 }*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,70);
 
 @font-face {
 	font-family: 'icomoon';
@@ -50,6 +51,8 @@
 .icon-lapiz:before {
 	content: "\e604";
 }
+
+
 
 aside{
 	display:none;
@@ -155,6 +158,17 @@ nav ul #publicar_nav{
 	right: -0.1em;
 
 }
+
+nav ul #publicar_nav.disabled a{
+	background: gray;
+	cursor: default;
+	box-shadow: none;
+}
+
+nav ul #publicar_nav.disabled:hover a{
+	box-shadow: none;
+}
+
 nav ul #publicar_nav a{
 	background: #22BCE0;
 	border-radius: 5px;	
