@@ -57,6 +57,10 @@
 aside{
 	display:none;
 }
+aside img{
+	width: 100%;
+	min-width: 100%;
+}
 body{
 	background:#eeeeee;
 	font-family: 'Open Sans', sans-serif;
